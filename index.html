@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ette Tharun - Software Engineer</title>
+    <!-- Modern Fonts: Outfit for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Animated Orbs -->
+    <div class="bg-fixed">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <span class="gradient-text-primary">E.</span> Tharun
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./Tharun_Ette_Resume.pdf" target="_blank" class="nav-resume-btn">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-padding">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <p class="hero-subtitle">Hello, I'm</p>
+                    <h1 class="hero-title">Ette <span class="gradient-text-primary">Tharun</span></h1>
+                    <h2 class="hero-roles">
+                        <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-description">
+                        A passionate Information Technology student and developer specializing in Deep Learning, Artificial Intelligence, and Modern Web Development. Turning complex problems into elegant solutions.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal delayed">
+                    <div class="image-wrapper">
+                        <div class="image-glow"></div>
+                        <img src="images/profile.png" alt="Ette Tharun" onerror="this.src='https://ui-avatars.com/api/?name=Ette+Tharun&size=512&background=0D8ABC&color=fff'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>About <span class="gradient-text-secondary">Me</span></h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="about-content reveal">
+                    <div class="glass-card full-width-card">
+                        <p>Enthusiastic Information Technology graduate seeking an entry-level position to utilize programming, problem-solving, and teamwork skills while adapting quickly to new technologies and evolving business requirements.</p>
+                        <p>Always expanding my horizons, currently diving deep into Modern UI/UX and Full Stack functionality alongside my core AI/ML interests.</p>
+                        
+                        <div class="resume-actions mt-2">
+                            <a href="./Tharun_Ette_Resume.pdf" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-eye"></i> View Resume
+                            </a>
+                            <a href="./Tharun_Ette_Resume.pdf" class="btn btn-outline" download>
+                                <i class="fas fa-download"></i> Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Academic <span class="gradient-text-primary">Journey</span></h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="grid-layout three-columns">
+                    <div class="glass-card reveal card-hover">
+                        <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>B.Tech (IT)</h3>
+                        <p class="card-subtitle">Vidya Jyothi Institute of Technology</p>
+                        <div class="card-meta">
+                            <span class="pill">2021 – 2025</span>
+                            <span class="pill-highlight">CGPA: 7.61</span>
+                        </div>
+                    </div>
+                    <div class="glass-card reveal delayed card-hover">
+                        <div class="card-icon"><i class="fas fa-school"></i></div>
+                        <h3>Intermediate (MPC)</h3>
+                        <p class="card-subtitle">Alphores Junior College</p>
+                        <div class="card-meta">
+                            <span class="pill">2021</span>
+                            <span class="pill-highlight">58.8%</span>
+                        </div>
+                    </div>
+                    <div class="glass-card reveal delayed-2 card-hover">
+                        <div class="card-icon"><i class="fas fa-book"></i></div>
+                        <h3>SSC (X)</h3>
+                        <p class="card-subtitle">Chandra Grammar High School</p>
+                        <div class="card-meta">
+                            <span class="pill">2019</span>
+                            <span class="pill-highlight">GPA: 8.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Technical <span class="gradient-text-secondary">Arsenal</span></h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="grid-layout hover-group">
+                    <div class="animated-border-card reveal">
+                        <div class="glass-card no-border content">
+                            <i class="fas fa-code skill-icon"></i>
+                            <h3>Programming</h3>
+                            <ul class="skill-list">
+                                <li>Java</li>
+                                <li>Python (Basics)</li>
+                                <li>C (Basics)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="animated-border-card reveal delayed">
+                        <div class="glass-card no-border content">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <h3>Web Tech</h3>
+                            <ul class="skill-list">
+                                <li>HTML & CSS</li>
+                                <li>JavaScript</li>
+                                <li>ReactJS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="animated-border-card reveal delayed-2">
+                        <div class="glass-card no-border content">
+                            <i class="fas fa-database skill-icon"></i>
+                            <h3>Databases</h3>
+                            <ul class="skill-list">
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="animated-border-card reveal">
+                        <div class="glass-card no-border content">
+                            <i class="fas fa-tools skill-icon"></i>
+                            <h3>Tools & IDEs</h3>
+                            <ul class="skill-list">
+                                <li>VS Code</li>
+                                <li>Eclipse</li>
+                                <li>IntelliJ IDEA</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="animated-border-card reveal delayed">
+                        <div class="glass-card no-border content">
+                            <i class="fab fa-git-alt skill-icon"></i>
+                            <h3>Version Control</h3>
+                            <ul class="skill-list">
+                                <li>Git</li>
+                                <li>GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="animated-border-card reveal delayed-2">
+                        <div class="glass-card no-border content">
+                            <i class="fas fa-users skill-icon"></i>
+                            <h3>Soft Skills</h3>
+                            <ul class="skill-list">
+                                <li>Time Management</li>
+                                <li>Teamwork & Comms</li>
+                                <li>Leadership</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Featured <span class="gradient-text-primary">Projects</span></h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="project-showcase">
+                    <!-- Project 1 -->
+                    <div class="glass-card project-card reveal card-hover">
+                        <div class="project-visual">
+                            <img src="images/plant-disease-detection.jpg" alt="Plant Disease Detection" onerror="this.src='https://images.unsplash.com/photo-1530836369250-ef71a3f5e4bf?auto=format&fit=crop&q=80&w=800'">
+                            <div class="project-overlay">
+                                <span class="view-text">Deep Learning</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>AI</span>
+                                <span>Computer Vision</span>
+                                <span>Agri Tech</span>
+                            </div>
+                            <h3>Plant Disease Detection and Classification</h3>
+                            <p>Developed a CNN-based deep learning model achieving ~98% accuracy in classifying plant leaf diseases. Created a Streamlit web app for real-time disease prediction.</p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check-circle"></i> Categorizes multiple plant diseases accurately</li>
+                                <li><i class="fas fa-check-circle"></i> Applied resizing, normalization, and data augmentation</li>
+                                <li><i class="fas fa-check-circle"></i> Trained using Python, TensorFlow, and OpenCV</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="glass-card project-card reveal card-hover reversed">
+                        <div class="project-visual">
+                            <img src="images/online-voting-system.jpg.png" alt="Online Voting System" onerror="this.src='https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&q=80&w=800'">
+                            <div class="project-overlay">
+                                <span class="view-text">Machine Learning</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>ML</span>
+                                <span>Cybersecurity</span>
+                                <span>Biometrics</span>
+                            </div>
+                            <h3>Online Voting System with Facial Recognition</h3>
+                            <p>Designed and implemented a secure online voting platform integrated with facial recognition-based voter authentication to prevent unauthorized access and ensure voting integrity.</p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check-circle"></i> Secure platform with biometric voting logic</li>
+                                <li><i class="fas fa-check-circle"></i> Real-time face detection using OpenCV (JavaCV)</li>
+                                <li><i class="fas fa-check-circle"></i> Built an interactive frontend with HTML/CSS/JS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Chatbot -->
+                    <div class="glass-card project-card reveal card-hover">
+                        <div class="project-visual">
+                            <img src="images/chatbot-interface.jpg" alt="ChatGPT-like Chatbot" onerror="this.src='https://images.unsplash.com/photo-1677442135722-5d7a2b8d9a9e?auto=format&fit=crop&q=80&w=800'">
+                            <div class="project-overlay">
+                                <span class="view-text">AI Chatbot</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>NLP</span>
+                                <span>AI</span>
+                                <span>Machine Learning</span>
+                            </div>
+                            <h3>ChatGPT-like Conversational AI Chatbot</h3>
+                            <p>Developed an advanced conversational AI chatbot capable of natural language understanding, context retention, and intelligent responses similar to ChatGPT architecture.</p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check-circle"></i> Implemented natural language processing with transformer-based models</li>
+                                <li><i class="fas fa-check-circle"></i> Built context memory system for coherent multi-turn conversations</li>
+                                <li><i class="fas fa-check-circle"></i> Created intuitive web interface with real-time chat functionality</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>My <span class="gradient-text-secondary">Certifications</span></h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="grid-layout certs-grid">
+                    <div class="glass-card card-hover flex-col reveal">
+                        <i class="fas fa-chart-line cert-icon"></i>
+                        <h3>Data Analytics and Visualization</h3>
+                        <p class="issuer">Accenture (via Forage)</p>
+                        <span class="year-badge">2024</span>
+                    </div>
+                    <div class="glass-card card-hover flex-col reveal delayed">
+                        <i class="fas fa-shield-alt cert-icon"></i>
+                        <h3>Cyber Security Analyst</h3>
+                        <p class="issuer">Tata (via Forage)</p>
+                        <span class="year-badge">2025</span>
+                    </div>
+                    <div class="glass-card card-hover flex-col reveal delayed-2">
+                        <i class="fas fa-chart-bar cert-icon"></i>
+                        <h3>Data Analytics</h3>
+                        <p class="issuer">Deloitte (via Forage)</p>
+                        <span class="year-badge">2025</span>
+                    </div>
+                    <div class="glass-card card-hover flex-col reveal delayed-3">
+                        <i class="fas fa-code cert-icon"></i>
+                        <h3>Programming Essentials in C</h3>
+                        <p class="issuer">Cisco Networking Academy</p>
+                        <span class="year-badge">2022</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Let's <span class="gradient-text-primary">Connect</span></h2>
+                    <div class="header-line"></div>
+                    <p class="contact-subtitle">Have a question or want to work together? Leave a message!</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <div class="glass-card info-card">
+                            <div class="info-item">
+                                <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email Mode</h4>
+                                    <a href="mailto:tharunette01@gmail.com">tharunette01@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-box"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <h4>Call Me</h4>
+                                    <a href="tel:+917330663804">+91 7330663804</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-box"><i class="fas fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Hyderabad, India</p>
+                                </div>
+                            </div>
+                            
+                            <div class="social-links mt-2">
+                                <a href="https://www.linkedin.com/in/tharun-ette-9108b7257" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/Tharunsunny019" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper reveal delayed">
+                        <form class="glass-card modern-form" onsubmit="event.preventDefault(); alert('Message sent successfully! (Demo)');">
+                            <div class="input-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="message" required placeholder=" " rows="4"></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="gradient-text-primary">E.</span> Tharun
+            </div>
+            <p>&copy; <span id="year"></span> Ette Tharun. Crafting digital experiences.</p>
+            <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
